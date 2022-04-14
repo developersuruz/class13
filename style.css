@@ -1,0 +1,471 @@
+/*Default CSS*/
+*{
+    margin: 0;
+    padding: 0;    
+} 
+
+.container{
+    width: 1240px; 
+    margin: auto; 
+}
+
+.img{
+    max-width: 100%;
+}
+
+/* header-section */
+.header-section{
+    background: url(./img/photo-1471879832106-c7ab9e0cee23.jpg) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    margin: auto;
+}
+
+.header-section .header-logo{
+    float: left;
+    width: 30%;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.header-section .header-logo span{}
+
+.header-section .header-menu{
+    float: right;
+    width: 70%;
+    text-align: center;
+    margin-top: 10px;
+}
+.header-section .header-menu ul{ 
+   
+}
+.header-section .header-menu ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 27px 17px;
+    font-size: 15px;
+}
+
+.header-section .header-menu ul li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.header-section .header-menu ul li a:hover{
+    color: #ef6c30;
+}
+
+.header-section .web-design{}
+
+.header-section .web-design::before{
+    content:"WEB DESIGN & DESIGNER"; 
+}
+.header-section .banner-caption h1{
+    font-size: 45px;
+    color: white;
+    position: absolute;  
+    top: 264px;
+    left: 400px;
+    font-style: italic;
+} 
+
+.header-section .banner-caption h1::before{
+    content: "\f10d";
+    font-family: "Font Awesome 5 pro";
+    font-weight: 800;
+    margin-right: 10px;
+    color: #f0654d; 
+    position: absolute; 
+    top: -22px;
+    left: -47px;
+}
+
+.header-section .banner-caption h1::after{
+    content: "\f10e";
+    font-family: "Font Awesome 5 pro";
+    font-weight: 800;
+    margin-left: 10px;
+    color: #f0654d;
+    position: absolute;
+    top: -16px;
+    left: 563px;
+}
+
+/* About Section */
+.about-section{}
+
+.about-section .about-heading{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.about-section .about-heading h1{font-size: 40px;text-align: center;color: #1c1d1c;}
+
+.about-section .about-us{} 
+
+.about-section .about-us .about-left{
+    width: 35%;
+    display: inline-block;
+}
+.about-section .about-us .about-left img{
+    display: inline-block;
+    width: 250px;
+    margin-left: 89px;
+    height: auto;
+    border: 3px solid #ff684b;
+}
+
+.about-section .about-us .about-right{
+    width: 64%;
+    display: inline-block;
+}
+.about-section .about-us .about-right h1{}
+.about-section .about-us .about-right p{
+    padding: 38px;
+    margin-right: 70px;
+}
+
+/* Service Section */
+.service-section{
+    background-color: #2e3e4e;
+    height: 600px;
+}
+
+.service-section .service-heading{}
+
+.service-section .service-heading h1{
+    text-align: center;
+    font-size: 40px;
+    color: #f1664d;
+    padding-top: 50px; 
+}
+
+.service-section .service-item{text-align: center;margin-top: 48px;}
+
+.service-section .service-item .service-one{
+    float: left;
+    width: 33%;
+    color: white;
+}
+
+.service-section .service-item .service-one .display{
+    width: 100px;
+    height: 100px;
+    background-color: #ef664d;
+    text-align: center;
+    line-height: 100px; 
+    display: inline-block;
+    border-radius: 10px 50px;
+    font-size: 40px;
+}
+
+.service-section .service-item .service-one .display span{}
+
+.service-section .service-item .service-one .display .fa-display{
+    display: inline-block;
+	color: white;
+}
+
+.service-item .service-one h2{
+    margin: 25px;
+}
+.service-item .service-one ul{
+    list-style: none;
+    font-size: 20px;
+}
+
+.service-item .service-one ul li{
+    line-height: 35px;
+}
+
+.service-item .service-one ul li::before{
+    content: "\f560";
+    font-family: "Font Awesome 5 free";
+    font-weight: 800;
+    margin-right: 15px;
+    color: #f0654d;
+}
+
+.service-one button {
+	padding: 10px 25px;
+	border-radius: 5px;
+	border: none;
+	background-color: #f0654d;
+	font-size: 18px;
+	color: white;
+	margin-top: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.service-one button::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: rgb(245, 249, 10);             
+    z-index: -1;
+    transition: .6s; 
+    border-radius: 5px;   
+}
+
+.service-one button:hover::before{
+    width: 100%;
+}
+
+.service-one button:hover{
+    color: #000;
+}
+
+
+.service-section .service-item .service-two{ 
+    float: left;
+    width: 33%;
+    color: white;
+}
+
+.service-section .service-item .service-two .print-design{
+    width: 100px;
+    height: 100px;
+    background-color: #ef664d;
+    text-align: center;
+    line-height: 100px; 
+    display: inline-block;
+    border-radius: 10px 50px;
+    font-size: 40px;
+}
+
+.service-section .service-item .service-two .print-design span{}
+
+.service-section .service-item .service-two .web-design .fa-print{
+    display: inline-block;
+	color: white;
+}
+
+.service-item .service-two h2{
+    margin: 25px;
+}
+
+.service-item .service-two ul{
+    list-style: none;
+    font-size: 20px;
+}
+
+.service-item .service-two ul li{
+    line-height: 35px;
+}
+
+.service-item .service-two ul li::before{
+    content: "\f560";
+    font-family: "Font Awesome 5 free";
+    font-weight: 800;
+    margin-right: 15px;
+    color: #f0654d;
+}
+
+.service-two button {
+	padding: 10px 25px;
+	border-radius: 5px;
+	border: none;
+	background-color: #f0654d;
+	font-size: 18px;
+	color: white;
+	margin-top: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.service-two button::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(245, 249, 10);             
+    z-index: -1;
+    transition: .6s; 
+    border-radius: 5px;   
+}
+
+.service-two button:hover::before{
+    height: 100%;
+}
+
+.service-two button:hover{
+    color: #000;
+}
+
+.service-section .service-item .service-three{
+    float: left;
+    width: 33%;
+    color: white;
+}
+
+.service-section .service-item .service-three .web-development{
+    width: 100px;
+    height: 100px;
+    background-color: #ef664d;
+    text-align: center;
+    line-height: 100px; 
+    display: inline-block;
+    border-radius: 10px 50px;
+    font-size: 40px;
+}
+
+.service-section .service-item .service-three .web-development span{}
+
+.service-section .service-item .service-three .web-development .fa-code{
+    display: inline-block;
+	color: white;
+}
+
+.service-item .service-three h2{
+    margin: 25px;
+}
+
+.service-item .service-three ul{
+    list-style: none;
+    font-size: 20px;
+}
+
+.service-item .service-three ul li{
+    line-height: 35px;
+}
+
+.service-item .service-three ul li::before{
+    content: "\f560";
+    font-family: "Font Awesome 5 free";
+    font-weight: 800;
+    margin-right: 15px;
+    color: #f0654d;
+}
+
+.service-three button {
+	padding: 10px 25px;
+	border-radius: 5px;
+	border: none;
+	background-color: #f0654d;
+	font-size: 18px;
+	color: white;
+	margin-top: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.service-three button::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(245, 249, 10);             
+    z-index: -1;
+    transition: .6s; 
+    border-radius: 5px;   
+}
+
+.service-three button:hover::before{
+    width: 100%;
+}
+
+.service-three button:hover{
+    color: #000;
+}
+
+/* Contact Section */
+.contact-section{
+    padding: 60px;
+    margin-bottom: 25px;
+    height: 300px;
+}
+
+.contact-section .contact-heading{}
+
+.contact-section .contact-heading h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-section .input-field{
+    text-align: center;
+}
+
+.contact-section .input-field .subsmail{
+	text-align: left;
+	border: none;
+	border-bottom: 1px solid red;
+	font-size: 16px; 
+	width: 600px;
+}
+.contact-section .input-field .submit{
+    padding: 15px 130px;
+    background-color: #e74c3c;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 0;
+    position: relative;
+    z-index: 1;
+	font-size: 17px;       
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-section .input-field .submit::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+                 
+    background-color: #391c14;             
+    z-index: -1;
+    transition: .6s;   
+    border-radius: 0px 5px 5px 0px;
+}
+
+.contact-section .input-field .submit::after{
+    content: "";
+    position: absolute;
+    width:0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #83422c;             
+                
+    z-index: -1;
+    transition: .6s;    
+    border-radius: 5px 0 0 5px;
+}
+
+.contact-section .input-field .submit:hover::before{
+    width: 50%;
+}
+    
+.contact-section .input-field .submit:hover::after{
+    width:50% ;    
+}
+
+
+/* Footer Section */
+.footer-section{ 
+    background-color: #2e3e4e;
+    
+    height: 100px;
+    line-height: 100px;
+}
+
+.footer-section .footer-content{
+    text-align: center;
+}
+
+.footer-section .footer-content p{
+    color: white;
+    font-size: 20px;
+}
